@@ -1,10 +1,10 @@
 :root {
   --navbar-height: 76px;
-  --bg-color: #f7f7f7;
-  --text-color: #444;
-  --card-radius: 15px;
+  --bg-color: #fbfbfb87;
+  --text-color: #323232;
+  --card-radius: 24px;
   --card-gap: 16px;
-  --card-shadow: rgba(0,0,0,0.25);
+  --card-shadow: rgba(42, 42, 42, 0.147);
 }
 
 * {
@@ -14,7 +14,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #eceded;
+  background: #cedca0;
   min-height: 100vh;
   color: white;
   cursor: none;
@@ -34,7 +34,6 @@ h1 {
   width: 30%;
   border-radius: 150px;
   background: rgba(127, 127, 127, 0.31);
-  border: 1px solid rgba(142, 142, 142, 0.25);
   backdrop-filter: blur(18px) saturate(160%);
   box-shadow: 0 2px 6px var(--card-shadow);
   position: fixed;
@@ -49,8 +48,8 @@ h1 {
   overflow: hidden;
   text-decoration: none;
   padding: 10px 16px;
-  border-radius: 8px;
-  background-color: #e0e0e0c4;
+  border-radius: 12px;
+  background-color: #fbfbfb55;
   font-weight: 640;
   display: inline-flex;
   align-items: center;
@@ -65,10 +64,10 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(221, 221, 221, 0.4), rgba(192, 192, 192, 0.4));
+  background: linear-gradient(to right, rgba(201, 206, 125, 0.936), rgb(192, 192, 64));
   opacity: 0;
   transition: opacity 0.6s ease;
-  z-index: -1; /* 👈 puts the gradient behind the text */
+  z-index: -1;
 }
 
 .navbar a:hover::before {
@@ -76,6 +75,7 @@ h1 {
 }
 
 .navbar a:hover {
+  color: white;
   padding: 10px 10%;
 }
 
@@ -215,7 +215,7 @@ h1 {
 
 .card:hover {
   box-shadow: 0 4px 12px var(--card-shadow);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .card img {
