@@ -37,28 +37,21 @@
     const cvLink = document.getElementById('cvLink');
     
     /* =========================
-    CV POPUP LOGIC
+    CV
     ========================= */
     cvLink.addEventListener('click', (e) => {
       e.preventDefault();
-      
+
       // Show optional overlay effect
       overlay.classList.add('active');
-      
-      const cvUrl = "https://drive.google.com/file/d/1NL1ecl3Ibm2lcbuepa-OIL-A83R18Jbj/preview";
-      const popupWidth = 900;
-      const popupHeight = 700;
-      const left = (screen.width / 2) - (popupWidth / 2);
-      const top = (screen.height / 2) - (popupHeight / 2);
-      
-      window.open(
-      cvUrl,
-      "cvPreview",
-      `width=${popupWidth},height=${popupHeight},top=${top},left=${left},resizable=yes,scrollbars=yes,status=no`
-      );
-      
-      // Hide overlay after a short delay for smoother UX
-      setTimeout(() => overlay.classList.remove('active'), 500);
+
+      const cvUrl = "https://onedrive.live.com/view.aspx?resid=9A6AB66731AF6BB5!sd766172ccbc04d03a42da1ef2645d9e8&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy85YTZhYjY2NzMxYWY2YmI1L0lRQXNGMmJYd01zRFRhUXRvZThtUmRub0FTbXNqcXBGbVZaZmtNRFU0eEtlYkNBP2U9YkFvd29n";
+
+      // Open in new tab after slight delay
+      setTimeout(() => {
+        window.open(cvUrl, "_blank");
+        overlay.classList.remove('active'); // optional remove after redirect
+      }, 200);
     });
     
     const emailBtn = document.querySelector('.email');
