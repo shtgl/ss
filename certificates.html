@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="description" content="Author: Shashwat Singhal; Profession: Analyst, Software Developer; Location: Pune, India">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shashwat Singhal</title>
-  <link rel="icon" type="image/x-icon" href="images/home.png">
+  <title>Projects</title>  
+  <link rel="icon" type="image/x-icon" href="images/env.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a class="home" href="index.html" title="Home">Home</a>
     <a class="project" href="projects.html" title="Projects">Projects</a>
-    <a class="cert" href="certificates.html" title="Certificates">Certificates</a>
     <a class="cv" href="#" id="cvLink" title="CV">CV</a>
     <a class="email" href="mailto:shwatgal@gmail.com" target="_blank" title="shwatgal@gmail.com">Email</a>
   </nav>
@@ -23,6 +23,7 @@
   
   <div class="cursor"></div>
   
+  <!-- Email Modal -->
   <div class="email-modal" id="emailModal">
     <div class="email-content">
       <h1>Reach Me @</h1><br><br>
@@ -127,20 +128,36 @@
     
   </script>
   
-  <main>
-    <section class="container" aria-labelledby="intro">
-      <div class="logo">
-        <img src="./images/logo.png" alt="Shashwat logo">
+  <div class="proj">
+  <div class="row">
+      <div class="card" onclick="window.location.href='https://www.credly.com/badges/48e8f5fc-4aa9-40fd-abf9-028ed700b0d8/public_url'">
+        <img src="images/cisco_networking_academy1_logo.jpg">
+        <div class="course_name">Data Analytics Essentials</div>
       </div>
-      
-      <article class="content" id="intro">
-        <h1>Shashwat Singhal</h1>
-        <p>
-          The study of Computer Science and Engineering has been a steady way for me to explore how ideas take shape through logic and structure. Working with data, code, and small projects has helped me understand that progress often comes from small, consistent steps rather than sudden answers.
-          
-          Each new concept adds another piece to the larger picture I’m trying to understand. I prefer to learn through observation and reflection, letting curiosity guide me toward clearer and simpler ways of thinking.
-        </p>
-  </main>
-      
+
+      <div class="card" onclick="window.location.href='https://www.coursera.org/account/accomplishments/professional-cert/FKI9Y5AQK0WV'">
+        <img src="images/deeplearningai_logo.jpg">
+        <div class="course_name">Data Analytics Professional</div>
+        <i>Specialization - 5 course</i>
+      </div>
+
+      <div class="card" onclick="window.location.href='https://www.coursera.org/account/accomplishments/professional-cert/NQEJS97G3GP3'">
+        <img src="images/deeplearningai_logo.jpg">
+        <div class="course_name">TensorFlow Developer Professional</div>
+        <i>Specialization - 4 course</i>
+      </div>
+
+      <div class="card" onclick="window.location.href='https://www.mygreatlearning.com/certificate/TFADDIMW'">
+        <img src="images/great_learning_logo.jpg">
+        <div class="course_name">MySQL Baiscs</div>
+      </div>
+
+      <div class="card" onclick="window.location.href='https://www.coursera.org/account/accomplishments/verify/QWKSXKWFTZGS'">
+        <img src="images/duke_coursera.jpg">
+        <div class="course_name">Programming Fundamentals</div>
+      </div>
+
+  </div>
+</div>
 </body>
 </html>
