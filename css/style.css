@@ -331,7 +331,7 @@ a {
   border-radius: 16px;
   padding: 28px 30px;
   width: 90%;
-  max-width: 360px;
+  max-width: 420px;
   text-align: center;
   color: var(--text-color);
   box-shadow: 0 6px 24px var(--card-shadow);
